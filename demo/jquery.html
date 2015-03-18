@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 seajs 引入 jquery 模块</title>
+</head>
+<body>
+
+<script src="../spm/seajs/2.3.0/sea.js" ></script>
+<script>
+seajs.config({
+    base: '../spm/'
+})
+console.log(typeof jquery);// undefined
+seajs.use(['jquery/1.11.2/jquery'] ,function ($) {
+    console.log(typeof $);// function
+    $('body').append('<strong>使用seajs 加载 jquery/1.11.2/jquery 成功，未污染全局变 $</strong>')
+})
+</script>
+</body>
+</html>
