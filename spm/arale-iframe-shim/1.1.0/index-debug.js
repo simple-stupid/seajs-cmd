@@ -1,5 +1,5 @@
-define("arale-iframe-shim/1.1.0/index-debug", ["jquery/1.7.2/jquery-debug","position/1.1.0/index-debug"], function(require, exports, module){
-var $ = require("jquery/1.7.2/jquery-debug");
+define("arale-iframe-shim/1.1.0/index-debug", ["jquery","position/1.1.0/index-debug"], function(require, exports, module){
+var $ = require('jquery');
 var Position = require("position/1.1.0/index-debug");
 
 var isIE6 = (window.navigator.userAgent || '').toLowerCase().indexOf('msie 6') !== -1;
