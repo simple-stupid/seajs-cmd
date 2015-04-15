@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 seajs 引入 src 目录下的自定义模块 log</title>
+</head>
+<body>
+
+<script src="../spm/seajs/2.3.0/sea.js" ></script>
+<script>
+seajs.config({
+    base: '../spm/'
+})
+
+seajs.use(['src/demo/log'] ,function (log) {
+    log('加载自定义模块成功');
+    document.write('加载自定义模块成功，请查看控制台');
+})
+</script>
+</body>
+</html>
