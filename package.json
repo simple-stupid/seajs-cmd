@@ -1,0 +1,31 @@
+{
+  "name": "seajs-cmd",
+  "version": "0.0.1",
+  "description": "seajs-cmd 是常用 JavaScript 模块的 CMD 版本",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nimojs/seajs-cmd.git"
+  },
+  "keywords": [
+    "seajs",
+    "cmd",
+    "seajs-combo",
+    "seajs-concat",
+    "spm",
+    "seajs-build"
+  ],
+  "author": "nimojs <nimo.jser@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nimojs/seajs-cmd/issues"
+  },
+  "homepage": "https://github.com/nimojs/seajs-cmd",
+  "dependencies": {
+    "connect": "^3.3.5",
+    "connect-combo": "^0.2.7"
+  }
+}
