@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-SPM-CMD
-=======
-
-spm-cmd 是 [spmjs.io](http://spmjs.io/) 上常用模块构建后的 CMD 版本。
-=======
 seajs-cmd
 =========
 [seajs](http://seajs.org/) 是一款很优秀的 Web 前端资源模块加载器，但 CMD 模块的构建则没有那么“简单”。
->>>>>>> master
 
 seajs-cmd 是 [spmjs.io](http://spmjs.io/) 上常用 JavaScript 模块的 CMD 版本。
 
