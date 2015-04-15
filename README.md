@@ -39,4 +39,4 @@ finish: build jquery@1.11.2 (1889ms)
 
 License
 -------
-License (MIT)，欢迎其他团队 [Fork](https://github.com/nimojs/seajs-cmd/fork) 或 [Download ZIP](https://github.com/nimojs/seajs-cmd/archive/master.zip) 此项目，将 seajs-cmd 部署在自己的前端静态资源服务器供 seajs 使用。
+License (MIT)，欢迎其他团队 [Fork](https://github.com/nimojs/seajs-cmd/fork) 或 [Download ZIP](https://github.com/nimojs/seajs-cmd/archive/gh-pages.zip) 此项目，将 seajs-cmd 部署在自己的前端静态资源服务器供 seajs 使用。
