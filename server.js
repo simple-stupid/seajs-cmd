@@ -7,7 +7,7 @@ var dir = path.join(__dirname, '/');
 var app = connect()
   .use(combo({
     directory: dir,
-    proxy: 'http://cmd.nimojs.com',
+    proxy: 'http://seajs.nimojs.com',
     cache: true,
     //log: true,
     static: true
