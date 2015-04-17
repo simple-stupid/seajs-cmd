@@ -18,6 +18,8 @@ seajs-cmd 帮助使用者降低 seajs 的使用成本，直接使用线上的 CM
 -------
 若你没有在此项目中找到某个 JavaScript 组件的 CMD 版本，欢迎提交 [issues](https://github.com/nimojs/rain/issues) 告诉我们。
 
+<!--
+等待确认最新版 spm 如何快速构建
 若您熟悉 spm 可自行 [Fork](https://github.com/nimojs/seajs-cmd/fork) 此项目。
 使用 spm 构建项目后提交 [Pull Requests](https://github.com/nimojs/rain/pulls) 给我们。
 
@@ -26,17 +28,17 @@ seajs-cmd 帮助使用者降低 seajs 的使用成本，直接使用线上的 CM
 1. cd 切换到 seajs-cmd 目录下
 2. 使用 spm 安装模块
 3. 切换模块目录
-4. 构建 CMD 模块和模块所有依赖项至 spm 目录
+4. 构建 CMD 模块和模块所有依赖项至 cmd 目录
 
 ```
 $ cd /Users/nimojs/Documents/code/seajs-cmd
 $ spm install jquery@1.11.2
 $ cd spm_modules/jquery/1.11.2/
-$ spm build --with-deps -O ../../../spm
+$ spm build --with-deps -O ../../../cmd
 
 finish: build jquery@1.11.2 (1889ms)
 ```
-
+-->
 License
 -------
 License (MIT)，欢迎其他团队 [Fork](https://github.com/nimojs/seajs-cmd/fork) 或 [Download ZIP](https://github.com/nimojs/seajs-cmd/archive/gh-pages.zip) 此项目，将 seajs-cmd 部署在自己的前端静态资源服务器供 seajs 使用。

@@ -15,3 +15,7 @@ script.show{
   line-height: 1.4;
   font-family:consolas,monospace;
 }
+#github{
+    position: absolute;
+    right:0;top:0;
+}
