@@ -1,0 +1,37 @@
+{
+  "family": "gumutianqi",
+  "name": "messenger",
+  "version": "1.4.1",
+  "description": "Client-side growl-like notifications with actions and auto-retry.",
+  "homepage": "http://github.hubspot.com/messenger/",
+  "author": "Zack Bloom <zackbloom@gmail.com>; Adam Schwartz <adam.flynn.schwartz@gmail.com",
+  "maintainers": [
+    "Zack Bloom <zackbloom@gmail.com>; Adam Schwartz <adam.flynn.schwartz@gmail.com"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HubSpot/messenger/"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": [],
+  "licenses": "MIT",
+  "spm": {
+    "output": [
+      "messenger.js",
+      "messenger-theme-flat.js",
+      "messenger-theme-future.js",
+      "messenger.css",
+      "messenger-spinner.css",
+      "messenger-theme-air.css",
+      "messenger-theme-block.css",
+      "messenger-theme-flat.css",
+      "messenger-theme-future.js",
+      "messenger-theme-ice.css"
+    ],
+    "alias": {},
+    "devAlias": {},
+    "engines": {}
+  }
+}

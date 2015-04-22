@@ -6,7 +6,7 @@ define("position/1.1.0/index-debug", ["jquery"], function(require, exports, modu
 
 var Position = exports,
     VIEWPORT = { _id: 'VIEWPORT', nodeType: 1 },
-    $ = require('jquery'),
+    $ = require("jquery"),
     isPinFixed = false,
     ua = (window.navigator.userAgent || "").toLowerCase(),
     isIE6 = ua.indexOf("msie 6") !== -1;
