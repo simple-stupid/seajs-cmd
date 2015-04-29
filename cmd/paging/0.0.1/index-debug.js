@@ -39,7 +39,7 @@ Paging.createData = function (settings) {
     var defaultSettings = {
         beforePageCount: 3,
         afterPageCount: 3,
-        link: '?id=1'
+        link: '?id='
     }
 
     // extend
@@ -52,7 +52,7 @@ Paging.createData = function (settings) {
     settings = this._correctSettings(settings)
     // output 输出
         // {Bolean} 存在分页
-    var _hasPageCount,
+    var _hasPaging,
         // {Number} 总页数 10
         _pageCount,
         // {Number} 当前页 5
@@ -88,10 +88,10 @@ Paging.createData = function (settings) {
     
     // 存在分页？
     if (_pageCount < 2) {
-        _hasPageCount = false
+        _hasPaging = false
     }
     else {
-        _hasPageCount = true
+        _hasPaging = true
     }
 
     // 是第一页？
@@ -175,7 +175,7 @@ Paging.createData = function (settings) {
         _nextPage = false
     }
     return {
-        _hasPageCount: _hasPageCount,
+        _hasPaging: _hasPaging,
         _pageCount: _pageCount,
         _currentPage: _currentPage,
         _isFirstPage: _isFirstPage,
@@ -191,7 +191,7 @@ Paging.createData = function (settings) {
 }
 
 Paging.defaultTemplate = ''
-+ '{{#_hasPageCount}}'
++ '{{#_hasPaging}}'
 + '    <div class="ui-paging">'
 + '        <{{#_prevPage}}a{{/_prevPage}}{{^_prevPage}}span{{/_prevPage}} class="ui-paging-prev" href="{{_link}}{{_prevPage}}">'
 + '            上一页'
@@ -213,7 +213,7 @@ Paging.defaultTemplate = ''
 + '        <span class="ui-paging-ellipsis">...</span>'
 + '        {{/_hasAfterPages}}'
 + '        {{^_isLastPage}}'
-+ '        <a href="{{_link}}{{_pageCount}}" class="ui-paging-item" data-page="{{_pageCount}}">{{_pageCount}}</a>'
++ '        <a href="{{_link}}{{_pageCount}}" class="ui-paging-item">{{_pageCount}}</a>'
 + '        {{/_isLastPage}}'
 + '        <{{#_nextPage}}a{{/_nextPage}}{{^_nextPage}}span{{/_nextPage}} class="ui-paging-next" href="{{_link}}{{_nextPage}}">'
 + '            下一页'
@@ -222,7 +222,7 @@ Paging.defaultTemplate = ''
 + '        <span class="ui-paging-which"><input value="{{_currentPage}}" type="text"></span>'
 + '        <a class="ui-paging-info ui-paging-goto" href="{{_link}}{{_currentPage}}" >跳转</a>'
 + '    </div>'
-+ '{{/_hasPageCount}}'
++ '{{/_hasPaging}}'
 
 Paging.render = function (settings) {
     settings.template = settings.template || this.defaultTemplate
