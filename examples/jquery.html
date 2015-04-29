@@ -13,17 +13,8 @@ seajs.config({
     // 配置 base 路径（必须）
     base: 'http://cmd.nimojs.com/cmd/'
 })
-
-document.getElementById('loading').innerHTML += seajs.resolve('jquery/1.11.2/jquery')
-
 seajs.use(['jquery/1.11.2/jquery'] ,function ($) {
-    if ($) {
-        $('#loading').html('<strong>使用seajs 加载 jquery/1.11.2/jquery 成功')    
-    }
-    else {
-        document.getElementById('loading').innerHTML =  seajs.resolve('jquery/1.11.2/jquery') + '加载失败，请检查网络状况。或<a href="https://github.com/nimojs/seajs-cmd/issues/new">告诉我们</a>'
-    }
-    
+    $('#loading').html('<strong>使用seajs 加载 jquery/1.11.2/jquery 成功')        
 })
 </script>
 
