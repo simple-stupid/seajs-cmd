@@ -1,4 +1,4 @@
-define("paging/0.0.1/index-debug", ["mustache/2.0.0/mustache-debug"], function(require, exports, module){
+define("paging/0.0.1/paging-debug", ["mustache/2.0.0/mustache-debug"], function(require, exports, module){
 var Paging = {
     render: function(){},
     createData: function(){},
