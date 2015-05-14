@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 seajs 引入 query-string 模块</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+文档：<a href="https://github.com/sindresorhus/query-string" target="_blank">https://github.com/sindresorhus/query-string</a>
+<script src="js/sea-v3.0.0.js" id="seajsnode" ></script>
+<script class="show">
+seajs.config({
+    // 配置 base 路径（必须）
+    base: 'http://cmd.nimojs.com/cmd/'
+})
+seajs.use(['query-string/2.1.0/index'] ,function (queryString) {
+    console.log(queryString.parse("?id=1"))
+    // location.search  "?id=1"
+})
+</script>
+
+<a href="http://github.com/nimojs/seajs-cmd/" id="github"> <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" /> </a>
+</body>
+</html>
