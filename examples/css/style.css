@@ -1,4 +1,4 @@
-script.show{
+script.show {
   display:block;
   width:100%;
   overflow-x:auto;
@@ -15,7 +15,7 @@ script.show{
   line-height: 1.4;
   font-family:consolas,monospace;
 }
-#github{
+#github {
     position: absolute;
     right:0;top:0;
 }
