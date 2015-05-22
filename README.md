@@ -15,6 +15,7 @@ seajs-cmd 帮助使用者降低 seajs 的使用成本，直接使用线上的 CM
 - [使用 seajs-combo 合并请求](http://cmd.nimojs.com/examples/arale-dialog-combo.html)
 - [handlebars](http://cmd.nimojs.com/examples/handlebars.html)
 - [query-string](http://cmd.nimojs.com/examples/query-string.html)
+- [handlebars-helper-is](http://cmd.nimojs.com/examples/handlebars-helper-is.html)
 
 
 参与维护

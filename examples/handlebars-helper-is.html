@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用 seajs 引入 handlebars-helper-is 模块</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+文档：<a href="https://github.com/nimojs/handlebars-helper-is" target="_blank">https://github.com/nimojs/handlebars-helper-is</a>
+<script src="js/sea-v3.0.0.js" id="seajsnode" ></script>
+<script class="show">
+seajs.config({
+    // 配置 base 路径（必须）
+    base: 'http://cmd.nimojs.com/cmd/'
+})
+seajs.use(['handlebars/3.0.0/dist/handlebars','handlebars-helper-is/0.0.4/index'] ,function (Handlebars, helperIs) {    
+    Handlebars.registerHelper('is', helperIs)
+    var output = Handlebars.compile('{{#is name "nimo"}}yes{{else}}no{{/is}}')({
+        name: 'nimo'
+    })
+    console.log(output)
+})
+</script>
+
+<a href="http://github.com/nimojs/seajs-cmd/" id="github"> <img alt="Fork me on GitHub" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" /> </a>
+</body>
+</html>
