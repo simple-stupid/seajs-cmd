@@ -1,4 +1,4 @@
-define("handlebars-helper-is/0.0.4/helper-is-debug", [], function(require, exports, module){
+define("handlebars-helper-is/0.0.4/index-debug", [], function(require, exports, module){
 var isArray = function(value) {
     return Object.prototype.toString.call(value) === '[object Array]'
 }
