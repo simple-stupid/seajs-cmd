@@ -1,0 +1,1 @@
+define("handlebars-helper-add/0.0.1/helper-add",[],function(e,n,r){r.exports=function(){for(var e=arguments,n=0,r=e.length-1,a="";r>n;n++)a+=e[n];return a}});
