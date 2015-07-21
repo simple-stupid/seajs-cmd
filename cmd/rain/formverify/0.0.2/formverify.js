@@ -1,12 +1,12 @@
 /*
   author:Nimo
 */
-define("rain/formverify/0.0.2/formverify", ['arale-widget/1.2.0/widget','jquery','arale-validator/0.10.1/index','arale-dialog/1.5.1/dialog','mustache/1.1.0/mustache'], function(require, exports, module) {
-    var Widget = require('arale-widget/1.2.0/widget');
+define("rain/formverify/0.0.2/formverify", ['arale/widget/1.1.1/widget','jquery','arale/validator/0.9.7/validator','arale/dialog/1.3.0/dialog','gallery/mustache/0.8.1/mustache'], function(require, exports, module) {
+    var Widget = require('arale/widget/1.1.1/widget');
     var $ = require('jquery');
-    var Core = require('arale-validator/0.10.1/index');
-    var Dialog = require('arale-dialog/1.5.1/dialog');
-    var Mustache = require('mustache/1.1.0/mustache');
+    var Core = require('arale/validator/0.9.7/validator');
+    var Dialog = require('arale/dialog/1.3.0/dialog');
+    var Mustache = require('gallery/mustache/0.8.1/mustache');
     var Formverify = function(opt){
         var that = this;
         // options
@@ -31,9 +31,8 @@ define("rain/formverify/0.0.2/formverify", ['arale-widget/1.2.0/widget','jquery'
             dialogErrorTpl: $(that.ele.form.data('dialog-error-tpl')).html()
         }
         // init
-        Widget.autoRenderAll();        
+        Widget.autoRenderAll();
         that.validator = Core.query(that.ele.form);
-        
         that.ele.submit.data('text',that.ele.submit.html())
 
         // debug S
