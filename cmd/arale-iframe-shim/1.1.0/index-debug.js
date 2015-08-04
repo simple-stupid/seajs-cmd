@@ -87,5 +87,6 @@ function createIframe(target) {
         css: css
     }).insertBefore(target);
 }
+module.exports.outerBoxClass="arale-iframe-shim-1_1_0";
 
 });

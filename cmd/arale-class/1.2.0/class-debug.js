@@ -190,5 +190,6 @@ var indexOf = Array.prototype.indexOf ?
       }
       return -1
     }
+module.exports.outerBoxClass="arale-class-1_2_0";
 
 });

@@ -9406,5 +9406,6 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 
 
 })( window );
+module.exports.outerBoxClass="jquery-1_7_2";
 
 });

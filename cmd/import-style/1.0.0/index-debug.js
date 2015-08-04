@@ -53,5 +53,6 @@ function importStyle(cssText, id) {
     styleNode = element;
   }
 }
+module.exports.outerBoxClass="import-style-1_0_0";
 
 });

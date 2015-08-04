@@ -1,6 +1,7 @@
 define("arale-overlay/1.2.0/overlay-debug", ["jquery","position/1.1.0/index-debug","arale-iframe-shim/1.1.0/index-debug","arale-widget/1.2.0/widget-debug","arale-base/1.2.0/base-debug","arale-class/1.2.0/class-debug","arale-events/1.2.0/events-debug"], function(require, exports, module){
 module.exports = require("arale-overlay/1.2.0/src/overlay-debug");
 module.exports.Mask = require("arale-overlay/1.2.0/src/mask-debug");
+module.exports.outerBoxClass="arale-overlay-1_2_0";
 
 });
 define("arale-overlay/1.2.0/src/overlay-debug", ["jquery","position/1.1.0/index-debug","arale-iframe-shim/1.1.0/index-debug","arale-widget/1.2.0/widget-debug","arale-base/1.2.0/base-debug","arale-class/1.2.0/class-debug","arale-events/1.2.0/events-debug"], function(require, exports, module){
@@ -254,6 +255,7 @@ function erase(target, array) {
     }
   }
 }
+module.exports.outerBoxClass="arale-overlay-1_2_0";
 
 });
 define("arale-overlay/1.2.0/src/mask-debug", ["jquery","position/1.1.0/index-debug","arale-iframe-shim/1.1.0/index-debug","arale-widget/1.2.0/widget-debug","arale-base/1.2.0/base-debug","arale-class/1.2.0/class-debug","arale-events/1.2.0/events-debug"], function(require, exports, module){
@@ -311,5 +313,6 @@ var Mask = Overlay.extend({
 });
 
 // 单例
-module.exports = new Mask();
+module.exports = new Mask();module.exports.outerBoxClass="arale-overlay-1_2_0";
+
 });

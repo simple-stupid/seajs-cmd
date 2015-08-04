@@ -251,5 +251,6 @@ function getOffset(element) {
              (docElem.clientTop || document.body.clientTop  || 0)
     };
 }
+module.exports.outerBoxClass="position-1_1_0";
 
 });

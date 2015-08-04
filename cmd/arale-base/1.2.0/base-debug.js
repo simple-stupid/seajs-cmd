@@ -1,5 +1,6 @@
 define("arale-base/1.2.0/base-debug", ["arale-class/1.2.0/class-debug","arale-events/1.2.0/events-debug"], function(require, exports, module){
 module.exports = require("arale-base/1.2.0/src/base-debug");
+module.exports.outerBoxClass="arale-base-1_2_0";
 
 });
 define("arale-base/1.2.0/src/base-debug", ["arale-class/1.2.0/class-debug","arale-events/1.2.0/events-debug"], function(require, exports, module){
@@ -54,6 +55,7 @@ function parseEventsFromInstance(host, attrs) {
 function ucfirst(str) {
   return str.charAt(0).toUpperCase() + str.substring(1);
 }
+module.exports.outerBoxClass="arale-base-1_2_0";
 
 });
 define("arale-base/1.2.0/src/aspect-debug", [], function(require, exports, module){
@@ -126,6 +128,7 @@ function wrap(methodName) {
 
   this[methodName].__isAspected = true;
 }
+module.exports.outerBoxClass="arale-base-1_2_0";
 
 });
 define("arale-base/1.2.0/src/attribute-debug", [], function(require, exports, module){
@@ -629,5 +632,6 @@ function isEqual(a, b) {
   // 其他情况返回 false, 以避免误判导致 change 事件没发生
   return false;
 }
+module.exports.outerBoxClass="arale-base-1_2_0";
 
 });

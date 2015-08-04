@@ -187,5 +187,6 @@ function isFunction(func) {
 }
 
 module.exports = Events
+module.exports.outerBoxClass="arale-events-1_2_0";
 
 });

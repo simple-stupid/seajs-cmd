@@ -1,5 +1,6 @@
 define("arale-widget/1.2.0/widget-debug", ["arale-base/1.2.0/base-debug","arale-class/1.2.0/class-debug","arale-events/1.2.0/events-debug","jquery"], function(require, exports, module){
 module.exports = require("arale-widget/1.2.0/src/widget-debug")
+module.exports.outerBoxClass="arale-widget-1_2_0";
 
 });
 define("arale-widget/1.2.0/src/widget-debug", ["arale-base/1.2.0/base-debug","arale-class/1.2.0/class-debug","arale-events/1.2.0/events-debug","jquery"], function(require, exports, module){
@@ -467,6 +468,7 @@ function trimRightUndefine(argus) {
   }
   return argus;
 }
+module.exports.outerBoxClass="arale-widget-1_2_0";
 
 });
 define("arale-widget/1.2.0/src/daparser-debug", ["jquery"], function(require, exports, module){
@@ -559,6 +561,7 @@ function normalizeValue(val) {
 
   return val
 }
+module.exports.outerBoxClass="arale-widget-1_2_0";
 
 });
 define("arale-widget/1.2.0/src/auto-render-debug", ["jquery"], function(require, exports, module){
@@ -636,5 +639,6 @@ exports.isDataApiOff = function(element) {
       (elementDataApi !== 'on' && isDefaultOff)
 }
 
+module.exports.outerBoxClass="arale-widget-1_2_0";
 
 });
