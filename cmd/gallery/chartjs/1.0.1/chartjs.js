@@ -8,7 +8,7 @@
  * https://github.com/nnnick/Chart.js/blob/master/LICENSE.md
  */
 
-define('gallery/chartjs/1.0.1/chartjs-debug', function(require, exports, module) {
+define('gallery/chartjs/1.0.1/chartjs', function(require, exports, module) {
 (function(){
 
     "use strict";
